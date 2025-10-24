@@ -3,7 +3,7 @@ name: refactor
 about: 코드 수정 / 개선
 title: ''
 labels: ''
-assignees: yellowmodric
+assignees: ''
 
 ---
 
