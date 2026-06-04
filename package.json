@@ -1,0 +1,25 @@
+{
+  "name": "covacova-fe",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/covacova0902/covacova-FE#readme",
+  "bugs": {
+    "url": "https://github.com/covacova0902/covacova-FE/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/covacova0902/covacova-FE.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"  
+  },
+  "dependencies": {
+    "next": "^16.2.7",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}
