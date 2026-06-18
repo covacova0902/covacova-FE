@@ -29,3 +29,10 @@ Thumbs.db
 # editor
 .vscode/
 .idea/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# vercel
+.vercel
