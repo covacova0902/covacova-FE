@@ -30,7 +30,7 @@ export default function HomePage() {
   return (
     <main className={`mx-auto flex h-screen max-w-[390px] flex-col items-center bg-white px-6 pt-[22vh]
     transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0"}`}>
-      <Image src="/assets/covacovaLogo.svg" alt="코바코바 로고" width={184} height={184} priority/>
+      <Image src="/assets/logos/covacovaLogo.svg" alt="코바코바 로고" width={184} height={184} priority/>
       <p className="mt-[32vh] text-center text-base leading-relaxed">코에서 코로,<br />
       마음까지 이어지는 뜨개 이야기</p>
     </main>
