@@ -1,5 +1,6 @@
 import type { Metadata } from "next"; // 페이지 메타데이터(title, description 등)의 타입
 import type { ReactNode } from "react"; // 자식 컴포넌트(children)의 타입
+import "pretendard/dist/web/variable/pretendardvariable.css"; // Pretendard 가변 폰트(@font-face) 정의를 불러옴
 import "./globals.css"; // 전역 스타일(Tailwind 포함)을 모든 페이지에 적용
 
 export const metadata: Metadata = {

@@ -1,1 +1,8 @@
 @import "tailwindcss"; /* Tailwind CSS v4의 기본 스타일(reset)과 유틸리티 클래스를 불러옴 */
+
+body {
+  /* 프로젝트 전체 기본 폰트를 Pretendard로 지정, 로드 실패 시 시스템 폰트로 대체 */
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
