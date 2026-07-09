@@ -1,8 +1,65 @@
 @import "tailwindcss"; /* Tailwind CSS v4의 기본 스타일(reset)과 유틸리티 클래스를 불러옴 */
 
+@theme {
+  /* 포인트 컬러 */
+  --color-pink: #f4cece;
+  --color-pink-muted: #e1b6b6;
+
+  --color-yellow: #f3e1aa;
+  --color-yellow-muted: #ebd184;
+
+  --color-green: #ccd8a1;
+  --color-green-muted: #a6cb90;
+
+  --color-blue: #b7d7e3;
+  --color-blue-muted: #8eb5c7;
+
+  --color-beige: #e5e1de;
+
+  /* Gray Scale */
+  --color-black: #373636;
+  --color-warm-gray: #565453;
+  --color-gray-1000: #777473;
+  --color-gray-800: #969290;
+  --color-gray-600: #b1aeac;
+  --color-gray-400: #c7c3c2;
+  --color-gray-200: #dfdcdb;
+  --color-background: #f1f1f1;
+  --color-white: #ffffff;
+
+  /* Typography - Body */
+  --text-b0m: 16px;
+  --text-b0m--line-height: 22px;
+  --text-b1m: 14px;
+  --text-b1m--line-height: 20px;
+  --text-b2m: 13px;
+  --text-b2m--line-height: 18px;
+  --text-b3m: 12px;
+  --text-b3m--line-height: 18px;
+
+  --text-b0r: 16px;
+  --text-b0r--line-height: 22px;
+  --text-b1r: 14px;
+  --text-b1r--line-height: 20px;
+  --text-b2r: 13px;
+  --text-b2r--line-height: 18px;
+  --text-b3r: 12px;
+  --text-b3r--line-height: 18px;
+}
+
 body {
   /* 프로젝트 전체 기본 폰트를 Pretendard로 지정, 로드 실패 시 시스템 폰트로 대체 */
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
-    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
-    "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    sans-serif;
 }
