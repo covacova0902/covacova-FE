@@ -33,24 +33,30 @@ export default function LoginPage() {
 
     setLoading(true);
 
-    const { data: res } = await api.post("/api/auth/login", {
-      email,
-      password,
-    });
+    try {
+      const { data: res } = await api.post("/api/auth/login", {
+        email,
+        password,
+      });
 
-    if (!res.success) {
-      alert(res.message);
-      return;
+      if (!res.success) {
+        alert(res.message);
+        return;
+      }
+
+      if (rememberId) {
+        localStorage.setItem(REMEMBERED_EMAIL_KEY, email);
+      } else {
+        localStorage.removeItem(REMEMBERED_EMAIL_KEY);
+      }
+
+      localStorage.setItem("accessToken", res.data.accessToken);
+      router.push("/home");
+    } catch {
+      alert("아이디 또는 비밀번호가 올바르지 않습니다.");
+    } finally {
+      setLoading(false);
     }
-
-    if (rememberId) {
-      localStorage.setItem(REMEMBERED_EMAIL_KEY, email);
-    } else {
-      localStorage.removeItem(REMEMBERED_EMAIL_KEY);
-    }
-
-    localStorage.setItem("accessToken", res.data.accessToken);
-    router.push("/home");
   };
 
   return (
